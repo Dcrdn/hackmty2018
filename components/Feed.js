@@ -1,1 +1,6 @@
-var a =1;
+import React from "react";
+
+class Feed extends from React.Components(){
+
+	
+}
