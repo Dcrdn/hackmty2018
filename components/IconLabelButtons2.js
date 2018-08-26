@@ -20,7 +20,7 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit,
   },
   iconSmall: {
-    fontSize: 20,
+    fontSize: 30,
   },
 });
 
@@ -30,8 +30,8 @@ function IconLabelButtons2(props) {
     <div>
 
       <Button variant="contained" color="primary" className={classes.button}>
-        Send
-        <Icon className={classes.rightIcon}>send</Icon>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send
+        <Icon className={classes.rightIcon}></Icon>
       </Button>
     </div>
   );

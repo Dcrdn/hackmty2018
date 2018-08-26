@@ -18,9 +18,9 @@ import MediaCard from "./MediaCard";
 import MediaCard1 from "./MediaCard1";
 import MediaCard2 from "./MediaCard2";
 import ContainedButtons from './ContainedButtons';
-
+import CenteredGrid2 from './CenteredGrid2';
 import CustomizedInputs from "./CustomizedInputs";
-//import ImageAvatars from "./ImageAvatars";
+import ImageAvatars from "./ImageAvatars";
 
 const drawerWidth = 240;
 
@@ -37,11 +37,12 @@ const styles = theme => ({
     overflow: 'hidden',
     position: 'relative',
     display: 'flex',
-    width: '100%',
+    width: '101%',
+    margin: '-8px',
   },
   appBar: {
     position: 'absolute',
-    backgroundColor: 'green !important',
+    backgroundColor: '#Ffbd4a !important',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -77,6 +78,18 @@ const styles = theme => ({
     justifyContent: 'flex-end',
     padding: '0 8px',
     ...theme.mixins.toolbar,
+  },
+  hello:{
+    "text-align": "right",
+    "font-family": "Courier New",
+    "padding-right": "10px",
+
+  },
+  centeredName:{
+    "text-align": "center",
+    "padding-bottom": "20px",
+    "font-family": "Courier New",
+    "font-weight": "bold",
   },
   content: {
     flexGrow: 1,
@@ -145,15 +158,20 @@ class PersistentDrawer extends React.Component {
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
+        <ImageAvatars/>
+        <div className={classes.centeredName}>Diego Cardenas</div>
         <Divider />
-        <List>Mi perfil</List>
-        <Divider />
-        <List>Consejeros</List>
+        <List className={classes.hello}>Mi perfil</List>
         <Divider />
         <Divider />
-        <List>Asesorar</List>
+        <List className={classes.hello}>Consejeros</List>
         <Divider />
-        <List>Aplicaciones</List>
+                <Divider />
+        <Divider />
+        <List className={classes.hello}>Asesorar</List>
+        <Divider />
+        <Divider />
+        <List className={classes.hello}>Aplicaciones</List>
       </Drawer>
     );
 
@@ -173,7 +191,7 @@ class PersistentDrawer extends React.Component {
             className={classNames(classes.appBar, {
               [classes.appBarShift]: open,
               [classes[`appBarShift-${anchor}`]]: open,
-            },)} className="diego"
+            },)} styles={{background: 'black'}}
           >
             <Toolbar disableGutters={!open}>
               <IconButton
@@ -201,8 +219,7 @@ class PersistentDrawer extends React.Component {
             <div className={classes.drawerHeader} />
             <h1>&nbsp;&nbsp;Actualizaciones</h1>
           <br/>
-          <MediaCard/><br/><br/>
-          <MediaCard1/>
+          <CenteredGrid2/>
           </main>
           {after}
         </div>

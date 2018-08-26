@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ImageAvatars from './ImageAvatars';
+import ImageAvatars2 from './ImageAvatars2';
 import TextFields from './TextFields';
 import IconLabelButtons from './IconLabelButtons';
 import IconLabelButtons2 from './IconLabelButtons2';
@@ -31,9 +31,9 @@ function CenteredGrid(props) {
         <Grid item xs={6}>
           <Paper className={classes.paper}>
             <h3><b>Información del consejero</b></h3>
-            <ImageAvatars/>
+            <ImageAvatars2/>
             <br/>
-            <b>Martín Lopez</b> 
+            <b>Martín Moscosa</b> 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -62,7 +62,7 @@ function CenteredGrid(props) {
             <IconLabelButtons/>
             Sube tu Curriculum (Opcional)
             <br/><br/>
-            Aplicar
+            
             <IconLabelButtons2/>
           </Paper>
         </Grid>

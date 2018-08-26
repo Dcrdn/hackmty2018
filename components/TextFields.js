@@ -27,12 +27,12 @@ class TextFields extends React.Component {
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
           id="full-width"
-          label="Label"
+          label=""
           InputLabelProps={{
             shrink: true,
           }}
-          placeholder="Placeholder"
-          helperText="Full width!"
+          placeholder="Mensaje"
+          helperText="¡Es tu momento!"
           fullWidth
           margin="normal"
         />

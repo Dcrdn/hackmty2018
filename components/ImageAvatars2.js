@@ -18,21 +18,21 @@ const styles = {
   },
 };
 
-function ImageAvatars(props) {
+function ImageAvatars2(props) {
   const { classes } = props;
   return (
     <div className={classes.row}>
       <Avatar
         alt="Adelle Charles"
-        src="https://scontent.fntr4-1.fna.fbcdn.net/v/t1.0-9/40093960_2328433253839690_2232803199104843776_n.jpg?_nc_cat=0&oh=0824a53560f48b90b7fa9aa17985199a&oe=5BECE360"
+        src="https://scontent.fntr4-1.fna.fbcdn.net/v/t1.0-9/31682321_10160300033275364_8148025213641031680_n.jpg?_nc_cat=0&oh=023a96b8372fa1e39fb7abb788dbcb05&oe=5C3477AC"
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
     </div>
   );
 }
 
-ImageAvatars.propTypes = {
+ImageAvatars2.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ImageAvatars);
+export default withStyles(styles)(ImageAvatars2);

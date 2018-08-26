@@ -15,12 +15,12 @@ export default class Routes {
         component: () => <div><PersistentDrawer/></div>,
       },
       {
-        path: "/apply",
+        path: "/red",
         exact: true,
         component: () => <div><PersistentDrawerApply/></div>,
       },
       {
-        path: "/me",
+        path: "/apply",
         exact: true,
         component: () => <div><PersistentDrawerProfile/></div>,
       },
