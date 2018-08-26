@@ -1,5 +1,7 @@
 import React from "react";
-import MediaCard from "../components/MediaCard"
+//import MediaCard from "../components/MediaCard";
+import PersistentDrawer from "../components/PersistentDrawer";
+
 export default class Routes {
 
   apply(routeHandler) {
@@ -13,7 +15,7 @@ export default class Routes {
       {
         path: "/diego",
         exact: true,
-        component: () => <MediaCard/>,
+        component: () => <div><PersistentDrawer/></div>,
       },
     ];
 

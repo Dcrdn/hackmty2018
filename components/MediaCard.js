@@ -23,12 +23,12 @@ function MediaCard(props) {
     <Card className={classes.card}>
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="./sesamo.JPG"
         title="Contemplative Reptile"
       />
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2">
-          Lizard
+          Martín Moscosa
         </Typography>
         <Typography component="p">
           Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
