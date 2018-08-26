@@ -1,4 +1,5 @@
 import React from "react";
+
 export default class Routes {
 
   apply(routeHandler) {
@@ -8,6 +9,11 @@ export default class Routes {
         path: "/",
         exact: true,
         component: () => <h1>Hello, World!</h1>,
+      },
+      {
+        path: "/diego",
+        exact: true,
+        component: () => <h1> hii </h1>,
       },
     ];
 
