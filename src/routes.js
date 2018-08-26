@@ -1,5 +1,5 @@
 import React from "react";
-
+import MediaCard from "../components/MediaCard"
 export default class Routes {
 
   apply(routeHandler) {
@@ -13,7 +13,7 @@ export default class Routes {
       {
         path: "/diego",
         exact: true,
-        component: () => <h1> hii </h1>,
+        component: () => <MediaCard/>,
       },
     ];
 
