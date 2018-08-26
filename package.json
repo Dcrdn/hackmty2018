@@ -26,5 +26,8 @@
   "license": "MIT",
   "devDependencies": {
     "@pawjs/pawjs": "^2.1.5"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.5.1"
   }
 }
