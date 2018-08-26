@@ -159,19 +159,32 @@ class PersistentDrawerApply extends React.Component {
         </div>
 
         <ImageAvatars/>
-        <div className={classes.centeredName}>Diego Cardenas</div>
+       <div className={classes.centeredName}>Diego Cardenas</div>
         <Divider />
-        <List className={classes.hello}>Mi perfil</List>
+        <List className={classes.hello}>
+        <a href="http://localhost:3003/">Inicio</a>
+        </List>
         <Divider />
         <Divider />
-        <List className={classes.hello}>Consejeros</List>
+        <List className={classes.hello}>
+        <a href="http://localhost:3003/me">Mi perfil</a>
+        </List>
+        <Divider />
+        <Divider />
+        <List className={classes.hello}>
+        <a href="http://localhost:3003/red">Mi red</a>
+        </List>
         <Divider />
                 <Divider />
         <Divider />
-        <List className={classes.hello}>Asesorar</List>
+        <List className={classes.hello}>
+        <a href="http://localhost:3003/asesorar">Asesorar</a>
+        </List>
         <Divider />
         <Divider />
-        <List className={classes.hello}>Aplicaciones</List>
+        <List className={classes.hello}>
+        <a href="http://localhost:3003/aplicaciones">Mis aplicaciones</a>
+        </List>
       </Drawer>
     );
 

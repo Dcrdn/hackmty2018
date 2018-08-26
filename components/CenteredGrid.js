@@ -63,6 +63,8 @@ function CenteredGrid(props) {
             Sube tu Curriculum (Opcional)
             <br/><br/>
             
+            <a onclick="alert('Tu solicitud ha sido enviada');"href="http://localhost:3003/">Enviar</a>
+
             <IconLabelButtons2/>
           </Paper>
         </Grid>

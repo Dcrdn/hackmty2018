@@ -8,6 +8,7 @@ import TextFields from './TextFields';
 import IconLabelButtons from './IconLabelButtons';
 import IconLabelButtons2 from './IconLabelButtons2';
 import AutoGridNoWrap from './AutoGridNoWrap';
+import BotonApply from './BotonApply';
 
 const styles = theme => ({
   root: {
@@ -38,7 +39,7 @@ function CenteredGrid2(props) {
       <Grid container spacing={24}>
         <Grid item xs={7}>
           <Paper className={classes.paper}>
-          <b>Martín Moscosa</b><br/>
+          <b>Elizabeth Arredón</b><br/>
           <p textAlign="left">Hola! Les mando un video muy interesante sobre inteligencia artificial. Esto es algo
           muy nuevo y la empresa se está interesando en ello. </p>
 <iframe src="https://youtube.com/embed/5J5bDQHQR1g"
@@ -57,14 +58,12 @@ function CenteredGrid2(props) {
       <Grid container spacing={24}>
         <Grid item xs={7}>
           <Paper className={classes.paper2}>
-          <b>Elizabeth Arredón</b><br/>
-          Acabo de regresar de mi viaje de reclutamiento
-          por latinoamérica. Fue una increíble experiencia
-          donde aprendí muchísimo. Uno de estos conocimientos es sobre el
-          desarrollo de un buen Resume. Para eso escribí un blog! Les dejo 
-          el link :)  
-  <a href="https://www.linkedin.com/pulse/10-tips-international-university-candidates-making-arredon-mier ">Linkedin post</a>
-
+          <b>Martín Moscosa</b><br/>
+          ¡Hola! En este momento tengo puestos abiertos para tener aprendices :) 
+          Si están interesados y quieren saber más información denle click al botón.
+          <br/>
+          <br/>
+          <a href="http://localhost:3003/apply">Aplicar</a>
 
           </Paper>
         </Grid>
