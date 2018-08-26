@@ -7,10 +7,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import ContainedButtons from './ContainedButtons';
 
 const styles = {
   card: {
-    'align': "left",
     maxWidth: 1100,
   },
   media: {
@@ -18,7 +18,7 @@ const styles = {
   },
 };
 
-function MediaCard(props) {
+function MediaCard1(props) {
   const { classes } = props;
   return (
     <Card className={classes.card}>
@@ -29,27 +29,22 @@ function MediaCard(props) {
       />
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2">
-          Martín Moscosa
+          Elizabeth Arredon
         </Typography>
         <Typography component="p">
-          Hola! Les mando un video muy interesante sobre inteligencia artificial. Esto es algo
-          muy nuevo y la empresa se está interesando en ello.
+          Hola! Durante los proximos 6 meses estaré asesorando a 5 estudiantes universitarios
+          en su trayectoria profesional. Interesados aplicar :) Que tengan bonito día.
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <ContainedButtons/>
       </CardActions>
     </Card>
   );
 }
 
-MediaCard.propTypes = {
+MediaCard1.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MediaCard);
+export default withStyles(styles)(MediaCard1);

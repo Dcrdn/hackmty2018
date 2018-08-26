@@ -1,6 +1,8 @@
 import React from "react";
 //import MediaCard from "../components/MediaCard";
 import PersistentDrawer from "../components/PersistentDrawer";
+import PersistentDrawerApply from "../components/PersistentDrawerApply";
+import PersistentDrawerProfile from "../components/PersistentDrawerProfile";
 
 export default class Routes {
 
@@ -10,12 +12,17 @@ export default class Routes {
       {
         path: "/",
         exact: true,
-        component: () => <h1>Hello, World!</h1>,
+        component: () => <div><PersistentDrawer/></div>,
       },
       {
-        path: "/diego",
+        path: "/apply",
         exact: true,
-        component: () => <div><PersistentDrawer/></div>,
+        component: () => <div><PersistentDrawerApply/></div>,
+      },
+      {
+        path: "/me",
+        exact: true,
+        component: () => <div><PersistentDrawerProfile/></div>,
       },
     ];
 

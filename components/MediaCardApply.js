@@ -11,14 +11,14 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     'align': "left",
-    maxWidth: 1100,
+    maxWidth: 550,
   },
   media: {
     height: 80,
   },
 };
 
-function MediaCard(props) {
+function MediaCardApply(props) {
   const { classes } = props;
   return (
     <Card className={classes.card}>
@@ -48,8 +48,8 @@ function MediaCard(props) {
   );
 }
 
-MediaCard.propTypes = {
+MediaCardApply.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MediaCard);
+export default withStyles(styles)(MediaCardApply);

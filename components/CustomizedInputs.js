@@ -34,7 +34,7 @@ const styles = theme => ({
     },
   },
   bootstrapInput: {
-    "margin-left":'1000px',
+    "margin-left":'1200px',
     width: '350px',
     borderRadius: 4,
     backgroundColor: theme.palette.common.white,
@@ -76,7 +76,7 @@ function CustomizedInputs(props) {
   return (
     <div className={classes.container}>
       <TextField
-        defaultValue="react-bootstrap"
+        defaultValue="Buscar..."
         id="bootstrap-input"
         InputProps={{
           disableUnderline: true,
