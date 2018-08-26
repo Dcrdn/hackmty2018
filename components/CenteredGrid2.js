@@ -43,7 +43,7 @@ function CenteredGrid2(props) {
           <p textAlign="left">Hola! Les mando un video muy interesante sobre inteligencia artificial. Esto es algo
           muy nuevo y la empresa se está interesando en ello. </p>
 <iframe src="https://youtube.com/embed/5J5bDQHQR1g"
-        width="200" height="100" frameborder="0" allowfullscreen>
+        width="300" height="170" frameborder="0" allowfullscreen>
 </iframe>
 
           </Paper>
@@ -69,8 +69,10 @@ function CenteredGrid2(props) {
         </Grid>
         <Grid item xs={5}>
           <Paper className={classes.paper2}>
-            Mensajes<br/>
-
+            Video recomendado para ti<br/>
+              <iframe src="https://youtube.com/embed/watch?v=U3CGMyjzlvM"
+        width="300" height="170" frameborder="0" allowfullscreen>
+</iframe>
           </Paper>
         </Grid>
       </Grid>

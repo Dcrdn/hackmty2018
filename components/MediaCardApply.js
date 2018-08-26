@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import ImageAvatars2 from './ImageAvatars2';
 
 const styles = {
   card: {
@@ -28,20 +29,18 @@ function MediaCardApply(props) {
         title="Contemplative Reptile"
       />
       <CardContent>
+      <ImageAvatars2/>
         <Typography gutterBottom variant="headline" component="h2">
           Martín Moscosa
         </Typography>
         <Typography component="p">
-          Hola! Les mando un video muy interesante sobre inteligencia artificial. Esto es algo
-          muy nuevo y la empresa se está interesando en ello.
+          Hola! Me llamo Martín. Trabajo en Wizeline como PM en el area de educación. Siéntanse
+          libres de seguirme, publico cosas interesantes.
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Seguir
         </Button>
       </CardActions>
     </Card>

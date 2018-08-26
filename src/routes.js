@@ -3,6 +3,8 @@ import React from "react";
 import PersistentDrawer from "../components/PersistentDrawer";
 import PersistentDrawerApply from "../components/PersistentDrawerApply";
 import PersistentDrawerProfile from "../components/PersistentDrawerProfile";
+import SimpleAppBar from "../components/SimpleAppBar";
+import PersistentDrawerMe from "../components/PersistentDrawerMe";
 
 export default class Routes {
 
@@ -10,9 +12,19 @@ export default class Routes {
 
     const routes = [
       {
-        path: "/",
+        path: "/home",
         exact: true,
         component: () => <div><PersistentDrawer/></div>,
+      },
+      {
+        path: "/",
+        exact: true,
+        component: () => <div><SimpleAppBar/></div>,
+      },
+      {
+        path: "/me",
+        exact: true,
+        component: () => <div><PersistentDrawerMe/></div>,
       },
       {
         path: "/red",

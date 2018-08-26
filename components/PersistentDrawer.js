@@ -162,7 +162,7 @@ class PersistentDrawer extends React.Component {
        <div className={classes.centeredName}>Diego Cardenas</div>
         <Divider />
         <List className={classes.hello}>
-        <a href="http://localhost:3003/">Inicio</a>
+        <a href="http://localhost:3003/home">Inicio</a>
         </List>
         <Divider />
         <Divider />
@@ -230,7 +230,7 @@ class PersistentDrawer extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            <h1>&nbsp;&nbsp;Actualizaciones</h1>
+            <h1>&nbsp;&nbsp;Recientes</h1>
           <br/>
           <CenteredGrid2/>
           </main>

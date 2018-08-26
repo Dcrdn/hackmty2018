@@ -46,7 +46,7 @@ function AutoGridNoWrap(props) {
             <Grid item xs>
               <Typography noWrap>
                 <b>Elizabeth Arredón</b><br/>
-                  Hey Diego! Vi tu perfil y estoy interesado en que seas mi aprendiz. Si te agrada la idea postúlate en la...
+                  Hey Diego! Vi tu perfil y estoy interesado en que seas mi aprendiz. Si te agrada...
               </Typography>
             </Grid>
           </Grid>

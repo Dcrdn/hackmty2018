@@ -14,12 +14,15 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import MediaCard from "./MediaCard";
+import MediaCard1 from "./MediaCard1";
+import MediaCard2 from "./MediaCard2";
+import ContainedButtons from './ContainedButtons';
+import CenteredGrid2 from './CenteredGrid2';
 import CustomizedInputs from "./CustomizedInputs";
-import NativeSelects from "./NativeSelects";
-import ContainedButtons2 from './ContainedButtons2';
-import ChipsArray from './ChipsArray';
-import MediaCardApply from './MediaCardApply';
 import ImageAvatars from "./ImageAvatars";
+import TabsWrappedLabel from "./TabsWrappedLabel.js";
+import ImageAvatars3 from "./ImageAvatars3";
 
 const drawerWidth = 240;
 
@@ -78,7 +81,7 @@ const styles = theme => ({
     padding: '0 8px',
     ...theme.mixins.toolbar,
   },
-    hello:{
+  hello:{
     "text-align": "right",
     "font-family": "Courier New",
     "padding-right": "10px",
@@ -119,7 +122,7 @@ const styles = theme => ({
   },
 });
 
-class PersistentDrawerApply extends React.Component {
+class PersistentDrawerMe extends React.Component {
   state = {
     open: false,
     anchor: 'left',
@@ -157,7 +160,6 @@ class PersistentDrawerApply extends React.Component {
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
-
         <ImageAvatars/>
        <div className={classes.centeredName}>Diego Cardenas</div>
         <Divider />
@@ -218,7 +220,6 @@ class PersistentDrawerApply extends React.Component {
               <Typography variant="title" color="inherit" noWrap>
                 
               </Typography>
-              <CustomizedInputs/>
 
             </Toolbar>
           </AppBar>
@@ -230,14 +231,11 @@ class PersistentDrawerApply extends React.Component {
             })}
           >
             <div className={classes.drawerHeader} />
-            <h1>&nbsp;&nbsp;Crecer Red</h1>
+            &nbsp;&nbsp;
           <br/>
-          <NativeSelects/>
+          <ImageAvatars3/>
           <br/>
-          <ChipsArray/>
-          <br/>
-          <ContainedButtons2/><br/><br/>
-          <MediaCardApply/>
+          <TabsWrappedLabel/>
           </main>
           {after}
         </div>
@@ -246,9 +244,9 @@ class PersistentDrawerApply extends React.Component {
   }
 }
 
-PersistentDrawerApply.propTypes = {
+PersistentDrawerMe.propTypes = {
   classes: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(PersistentDrawerApply);
+export default withStyles(styles, { withTheme: true })(PersistentDrawerMe);
